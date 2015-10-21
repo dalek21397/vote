@@ -1,0 +1,14 @@
+
+.login-btn .btn-success {
+	width: 160px;
+	margin-right: 25px;
+}
+
+.login-btn .btn-twitter {
+	width: 180px;
+}
+
+.btn-twitter {
+	background-color: #2daddc;
+	color: white;
+}

@@ -6,6 +6,8 @@ clone the project git clone <clone URL>
 
 
 npm install 
+
+
 bower install
 
 grunt serve

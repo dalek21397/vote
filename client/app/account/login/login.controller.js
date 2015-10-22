@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('votePlexApp')
-  .controller('LoginCtrl', function ($scope, Auth, $location) {
+  .controller('LoginCtrl', function ($scope, Auth, $location, $state) {
     $scope.user = {};
     $scope.errors = {};
 
@@ -15,7 +15,8 @@ angular.module('votePlexApp')
         })
         .then( function() {
           // Logged in, redirect to home
-          $location.path('/');
+          
+          $state.go("main", {name: "sureshtanneru"});
         })
         .catch( function(err) {
           $scope.errors.other = err.message;

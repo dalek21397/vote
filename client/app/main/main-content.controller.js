@@ -3,11 +3,12 @@
 angular.module('votePlexApp')
   .controller('MainContentCtrl', MainContentCtrl);
 
-  MainContentCtrl.$inject = ['$scope', '$state'];
+  MainContentCtrl.$inject = ['$scope', '$state', 'Auth'];
 
-  function MainContentCtrl($scope, $state) {
+  function MainContentCtrl($scope, $state, Auth) {
     var vm = this;
     vm.showBtn = false;
+    vm.isLoggedIn = Auth.isLoggedIn();
 
     if($state.current.name === 'main'){
        vm.showBtn = true;   
@@ -17,6 +18,8 @@ angular.module('votePlexApp')
 
     function showSignUp() {
       $state.go('signup');
-    }
+    };
+
+
     
   }

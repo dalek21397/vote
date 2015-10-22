@@ -16,7 +16,7 @@ angular.module('votePlexApp')
                 },
                 'content': {
                     templateUrl: 'app/main/main.html',
-                    controller: 'MainCtrl'
+                    controller: 'MainCtrl as vm'
                 },
             	'footer': {
             		templateUrl: 'components/footer/footer.html'

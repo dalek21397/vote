@@ -20,6 +20,13 @@ angular.module('votePlexApp')
       $state.go('signup');
     };
 
+    vm.myPolls = myPolls;
+    function myPolls() {
+      $state.go("mypoll");
+    }
 
-    
+    vm.newPolls = newPolls;
+    function newPolls() {
+      $state.go("main");
+    }
   }

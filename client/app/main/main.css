@@ -54,3 +54,12 @@ button.main-signup {
 .navbar-text {
     margin-left: 15px;
 }
+
+.newpoll {
+    text-align: center;
+}
+
+button.btn-newpoll {
+    margin-top: 20px;
+    width: 150px !important;
+}

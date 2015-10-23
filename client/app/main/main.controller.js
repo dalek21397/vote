@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('votePlexApp')
-  .controller('MainCtrl', function ($scope, $http, Auth) {
+  .controller('MainCtrl', function ($scope, $http, Auth, $state) {
     var vm = this;
     $scope.awesomeThings = [];
 
@@ -22,4 +22,8 @@ angular.module('votePlexApp')
     };
 
     vm.isLoggedIn = Auth.isLoggedIn();
+    
+    if($state.current.name === "mypoll") {
+      vm.showPolls = true;
+    }
   });

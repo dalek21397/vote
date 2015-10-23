@@ -22,5 +22,24 @@ angular.module('votePlexApp')
             		templateUrl: 'components/footer/footer.html'
             	}	
             }    
+        })
+        .state('mypoll', {
+            url: '/mypoll',
+            views: {
+                'header': {
+                    templateUrl: 'components/navbar/navbar.html',
+                    controller: 'NavbarCtrl'
+                },
+                'main-content': {
+                    templateUrl: 'app/main/main-content.html',
+                    controller: 'MainContentCtrl as vm'
+                },
+                'content': {
+                    templateUrl: 'app/main/mypoll.html'
+                },
+                'footer': {
+                    templateUrl: 'components/footer/footer.html'
+                }   
+            }    
         });
 });

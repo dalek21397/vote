@@ -22,6 +22,22 @@
 </article>
 
 <article class="container" ng-show="vm.isLoggedIn">
-  <p> here goes polls page </p>
+  <section class="col-lg-offset-4 col-lg-4 newpoll">
+    <h2> New Poll</h2>
+      <form>
+        <section class="form-group">
+          <label for="txtNewPoll">Name of Poll</label>
+          <input type="email" class="form-control" id="txtNewPoll" placeholder="what is your favourite brand?">
+        </section>
+
+        <section class="form-group">
+          <label>options</label>
+          <input type="email" class="form-control" placeholder="coke">
+          <input type="email" class="form-control" placeholder="pepsi">
+          <button class="btn btn-lg btn-default btn-newpoll">more options</button>
+          <button class="btn btn-lg btn-success btn-newpoll">submit</button>
+        </section>
+      </form>
+  </section>  
 </article>
 
